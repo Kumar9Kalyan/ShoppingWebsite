@@ -14,7 +14,7 @@ function App() {
           <Route path="/" element={<DashBoard />}>
             <Route path="ShoppingWebsite" element={<ProductListing />} />
             <Route path="product/:productId" Component={ProductDetails} />
-            <Route path="*" element={<h2>Page Not Found</h2>} />
+            <Route path="*" element={<ProductListing />} />
           </Route>
         </Routes>
       </div>
